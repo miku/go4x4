@@ -1,0 +1,353 @@
+digraph gocallvis {
+    label="github.com/miku/microblob/cmd/microblob";
+    labeljust="l";
+    fontname="Arial";
+    fontsize="14";
+    rankdir="LR";
+    bgcolor="lightgray";
+    style="solid";
+    penwidth="0.5";
+    pad="0.0";
+    nodesep="0.35";
+
+    node [shape="ellipse" style="filled" fillcolor="honeydew" fontname="Verdana" penwidth="1.0" margin="0.05,0.0"];
+    edge [minlen="2"]
+
+    subgraph "cluster_focus" {
+        bgcolor="#e6ecfa";
+label="microblob";
+labelloc="t";
+labeljust="c";
+fontsize="18";
+        
+        "github.com/miku/microblob.NewHandler$1" [ style="dotted,filled" fillcolor="lightblue" label="NewHandler$1" ]
+        "github.com/miku/microblob.NewHandler$2" [ fillcolor="lightblue" label="NewHandler$2" style="dotted,filled" ]
+        "github.com/miku/microblob.NewHandler$3" [ fillcolor="lightblue" label="NewHandler$3" style="dotted,filled" ]
+        "(*github.com/miku/microblob.LevelDBBackend).openDatabase" [ label="(*LevelDBBackend).openDatabase" penwidth="0.5" fillcolor="lightblue" ]
+        "(*github.com/miku/microblob.LevelDBBackend).Count" [ fillcolor="lightblue" label="(*LevelDBBackend).Count" penwidth="1.5" ]
+        "(*github.com/miku/microblob.BlobHandler).ServeHTTP" [ penwidth="1.5" fillcolor="lightblue" label="(*BlobHandler).ServeHTTP" ]
+        "(*github.com/miku/microblob.LevelDBBackend).Get" [ penwidth="1.5" fillcolor="lightblue" label="(*LevelDBBackend).Get" ]
+        "(*github.com/miku/microblob.LevelDBBackend).openBlob" [ fillcolor="lightblue" label="(*LevelDBBackend).openBlob" penwidth="0.5" ]
+        "github.com/miku/microblob.IsAllZero" [ label="IsAllZero" penwidth="1.5" fillcolor="lightblue" ]
+        "(github.com/miku/microblob.DebugBackend).Get" [ label="(DebugBackend).Get" penwidth="1.5" fillcolor="lightblue" ]
+        "github.com/miku/microblob.WithLastResponseTime$1" [ label="WithLastResponseTime$1" style="dotted,filled" fillcolor="lightblue" ]
+        "github.com/miku/microblob.NewLineProcessor" [ fillcolor="lightblue" label="NewLineProcessor" penwidth="1.5" ]
+        "github.com/miku/microblob.NewLineProcessorBatchSize" [ fillcolor="lightblue" label="NewLineProcessorBatchSize" penwidth="1.5" ]
+        "github.com/miku/microblob.AppendBatchSize" [ fillcolor="lightblue" label="AppendBatchSize" penwidth="1.5" ]
+        "(github.com/miku/microblob.LineProcessor).RunWithWorkers$2" [ fillcolor="lightblue" label="(LineProcessor).RunWithWorkers$2" style="dotted,filled" ]
+        "(github.com/miku/microblob.RegexpExtractor).ExtractKey" [ fillcolor="lightblue" label="(RegexpExtractor).ExtractKey" penwidth="1.5" ]
+        "(github.com/miku/microblob.ParsingExtractor).ExtractKey" [ fillcolor="lightblue" label="(ParsingExtractor).ExtractKey" penwidth="1.5" ]
+        "github.com/miku/microblob.renderString" [ fillcolor="lightblue" label="renderString" penwidth="0.5" ]
+        "(github.com/miku/microblob.ToplevelKeyExtractor).ExtractKey" [ penwidth="1.5" fillcolor="lightblue" label="(ToplevelKeyExtractor).ExtractKey" ]
+        "(github.com/miku/microblob.LineProcessor).RunWithWorkers" [ penwidth="1.5" fillcolor="lightblue" label="(LineProcessor).RunWithWorkers" ]
+        "(github.com/miku/microblob.LineProcessor).RunWithWorkers$1" [ fillcolor="lightblue" label="(LineProcessor).RunWithWorkers$1" style="dotted,filled" ]
+        "(github.com/miku/microblob.DebugBackend).WriteEntries" [ fillcolor="lightblue" label="(DebugBackend).WriteEntries" penwidth="1.5" ]
+        "(*github.com/miku/microblob.LevelDBBackend).WriteEntries" [ fillcolor="lightblue" label="(*LevelDBBackend).WriteEntries" penwidth="1.5" ]
+        "github.com/miku/microblob.Append" [ fillcolor="lightblue" label="Append" penwidth="1.5" ]
+        "(github.com/miku/microblob.UpdateHandler).ServeHTTP" [ fillcolor="lightblue" label="(UpdateHandler).ServeHTTP" penwidth="1.5" ]
+        "(*github.com/miku/microblob.LevelDBBackend).Close" [ fillcolor="lightblue" label="(*LevelDBBackend).Close" penwidth="1.5" ]
+        "(github.com/miku/microblob.DebugBackend).Close" [ fillcolor="lightblue" label="(DebugBackend).Close" penwidth="1.5" ]
+        "github.com/miku/microblob.init" [ penwidth="0.5" fillcolor="lightblue" label="init" ]
+        "github.com/miku/microblob.init#1" [ label="init#1" penwidth="0.5" fillcolor="lightblue" ]
+        "github.com/miku/microblob.NewHandler" [ fillcolor="lightblue" label="NewHandler" penwidth="1.5" ]
+        "github.com/miku/microblob.WithLastResponseTime" [ label="WithLastResponseTime" penwidth="1.5" fillcolor="lightblue" ]
+        
+        subgraph "cluster_github.com/gorilla/handlers" {
+        fontsize="16";
+style="filled";
+tooltip="package: github.com/gorilla/handlers";
+rank="sink";
+label="handlers";
+URL="/?f=github.com/gorilla/handlers";
+penwidth="0.8";
+fillcolor="lightyellow";
+fontname="Tahoma bold";
+        
+        "(*github.com/gorilla/handlers.responseLogger).Header" [ fillcolor="moccasin" label="(*responseLogger).Header" penwidth="1.5" ]
+        "(*github.com/gorilla/handlers.responseLogger).WriteHeader" [ penwidth="1.5" fillcolor="moccasin" label="(*responseLogger).WriteHeader" ]
+        "(*github.com/gorilla/handlers.responseLogger).Write" [ fillcolor="moccasin" label="(*responseLogger).Write" penwidth="1.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/gorilla/mux" {
+        penwidth="0.8";
+label="mux";
+URL="/?f=github.com/gorilla/mux";
+fontname="Tahoma bold";
+rank="sink";
+tooltip="package: github.com/gorilla/mux";
+fontsize="16";
+style="filled";
+fillcolor="lightyellow";
+        
+        "github.com/gorilla/mux.Vars" [ fillcolor="moccasin" label="Vars" penwidth="1.5" ]
+        "(*github.com/gorilla/mux.Router).ServeHTTP" [ fillcolor="moccasin" label="(*Router).ServeHTTP" penwidth="1.5" ]
+        "github.com/gorilla/mux.NewRouter" [ fillcolor="moccasin" label="NewRouter" penwidth="1.5" ]
+        "(*github.com/gorilla/mux.Router).Handle" [ fillcolor="moccasin" label="(*Router).Handle" penwidth="1.5" ]
+        "(*github.com/gorilla/mux.Router).HandleFunc" [ penwidth="1.5" fillcolor="moccasin" label="(*Router).HandleFunc" ]
+        
+    }
+
+        subgraph "cluster_github.com/json-iterator/go" {
+        style="filled";
+fontname="Tahoma bold";
+rank="sink";
+label="jsoniter";
+penwidth="0.8";
+fontsize="16";
+fillcolor="lightyellow";
+URL="/?f=github.com/json-iterator/go";
+tooltip="package: github.com/json-iterator/go";
+        
+        "(*github.com/json-iterator/go.Encoder).Encode" [ fillcolor="moccasin" label="(*Encoder).Encode" penwidth="1.5" ]
+        "(*github.com/json-iterator/go.frozenConfig).NewEncoder" [ fillcolor="moccasin" label="(*frozenConfig).NewEncoder" penwidth="1.5" ]
+        "(*github.com/json-iterator/go.frozenConfig).Unmarshal" [ fillcolor="moccasin" label="(*frozenConfig).Unmarshal" penwidth="1.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/miku/microblob/cmd/microblob" {
+        penwidth="0.8";
+fillcolor="lightyellow";
+fontname="Tahoma bold";
+rank="sink";
+label="main";
+URL="/?f=github.com/miku/microblob/cmd/microblob";
+tooltip="package: github.com/miku/microblob/cmd/microblob";
+fontsize="16";
+style="filled";
+        
+        "github.com/miku/microblob/cmd/microblob.main$1" [ style="dotted,filled" fillcolor="moccasin" label="main$1" ]
+        "github.com/miku/microblob/cmd/microblob.main" [ fillcolor="moccasin" label="main" penwidth="0.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/schollz/progressbar" {
+        fontname="Tahoma bold";
+rank="sink";
+tooltip="package: github.com/schollz/progressbar";
+penwidth="0.8";
+fillcolor="lightyellow";
+label="progressbar";
+URL="/?f=github.com/schollz/progressbar";
+fontsize="16";
+style="filled";
+        
+        "github.com/schollz/progressbar.New" [ fillcolor="moccasin" label="New" penwidth="1.5" ]
+        "(*github.com/schollz/progressbar.ProgressBar).Add" [ penwidth="1.5" fillcolor="moccasin" label="(*ProgressBar).Add" ]
+        
+    }
+
+        subgraph "cluster_github.com/sirupsen/logrus" {
+        fillcolor="lightyellow";
+rank="sink";
+label="logrus";
+URL="/?f=github.com/sirupsen/logrus";
+tooltip="package: github.com/sirupsen/logrus";
+fontsize="16";
+style="filled";
+fontname="Tahoma bold";
+penwidth="0.8";
+        
+        "github.com/sirupsen/logrus.Printf" [ fillcolor="moccasin" label="Printf" penwidth="1.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/syndtr/goleveldb/leveldb" {
+        penwidth="0.8";
+fillcolor="lightyellow";
+label="leveldb";
+URL="/?f=github.com/syndtr/goleveldb/leveldb";
+tooltip="package: github.com/syndtr/goleveldb/leveldb";
+fontsize="16";
+style="filled";
+fontname="Tahoma bold";
+rank="sink";
+        
+        "github.com/syndtr/goleveldb/leveldb.OpenFile" [ fillcolor="moccasin" label="OpenFile" penwidth="1.5" ]
+        "(*github.com/syndtr/goleveldb/leveldb.DB).NewIterator" [ fillcolor="moccasin" label="(*DB).NewIterator" penwidth="1.5" ]
+        "(*github.com/syndtr/goleveldb/leveldb.dbIter).Release" [ penwidth="1.5" fillcolor="moccasin" label="(*dbIter).Release" ]
+        "(*github.com/syndtr/goleveldb/leveldb.dbIter).Error" [ fillcolor="moccasin" label="(*dbIter).Error" penwidth="1.5" ]
+        "(*github.com/syndtr/goleveldb/leveldb.dbIter).Next" [ fillcolor="moccasin" label="(*dbIter).Next" penwidth="1.5" ]
+        "(*github.com/syndtr/goleveldb/leveldb.DB).Get" [ penwidth="1.5" fillcolor="moccasin" label="(*DB).Get" ]
+        "(*github.com/syndtr/goleveldb/leveldb.Batch).Put" [ fillcolor="moccasin" label="(*Batch).Put" penwidth="1.5" ]
+        "(*github.com/syndtr/goleveldb/leveldb.DB).Write" [ fillcolor="moccasin" label="(*DB).Write" penwidth="1.5" ]
+        "(*github.com/syndtr/goleveldb/leveldb.DB).Close" [ fillcolor="moccasin" label="(*DB).Close" penwidth="1.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/syndtr/goleveldb/leveldb/errors" {
+        fontname="Tahoma bold";
+rank="sink";
+URL="/?f=github.com/syndtr/goleveldb/leveldb/errors";
+penwidth="0.8";
+fontsize="16";
+style="filled";
+fillcolor="lightyellow";
+label="errors";
+tooltip="package: github.com/syndtr/goleveldb/leveldb/errors";
+        
+        "(*github.com/syndtr/goleveldb/leveldb/errors.ErrCorrupted).Error" [ fillcolor="moccasin" label="(*ErrCorrupted).Error" penwidth="1.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/syndtr/goleveldb/leveldb/iterator" {
+        fontname="Tahoma bold";
+rank="sink";
+label="iterator";
+fontsize="16";
+style="filled";
+fillcolor="lightyellow";
+URL="/?f=github.com/syndtr/goleveldb/leveldb/iterator";
+tooltip="package: github.com/syndtr/goleveldb/leveldb/iterator";
+penwidth="0.8";
+        
+        "(*github.com/syndtr/goleveldb/leveldb/iterator.emptyIterator).Error" [ penwidth="1.5" fillcolor="moccasin" label="(*emptyIterator).Error" ]
+        "(*github.com/syndtr/goleveldb/leveldb/iterator.emptyIterator).Next" [ label="(*emptyIterator).Next" penwidth="1.5" fillcolor="moccasin" ]
+        
+    }
+
+        subgraph "cluster_github.com/syndtr/goleveldb/leveldb/storage" {
+        penwidth="0.8";
+style="filled";
+fontname="Tahoma bold";
+label="storage";
+URL="/?f=github.com/syndtr/goleveldb/leveldb/storage";
+tooltip="package: github.com/syndtr/goleveldb/leveldb/storage";
+fontsize="16";
+fillcolor="lightyellow";
+rank="sink";
+        
+        "(*github.com/syndtr/goleveldb/leveldb/storage.ErrCorrupted).Error" [ label="(*ErrCorrupted).Error" penwidth="1.5" fillcolor="moccasin" ]
+        
+    }
+
+        subgraph "cluster_github.com/syndtr/goleveldb/leveldb/table" {
+        style="filled";
+fontname="Tahoma bold";
+rank="sink";
+label="table";
+penwidth="0.8";
+fillcolor="lightyellow";
+URL="/?f=github.com/syndtr/goleveldb/leveldb/table";
+tooltip="package: github.com/syndtr/goleveldb/leveldb/table";
+fontsize="16";
+        
+        "(*github.com/syndtr/goleveldb/leveldb/table.ErrCorrupted).Error" [ fillcolor="moccasin" label="(*ErrCorrupted).Error" penwidth="1.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/syndtr/goleveldb/leveldb/util" {
+        fontsize="16";
+fillcolor="lightyellow";
+rank="sink";
+label="util";
+penwidth="0.8";
+style="filled";
+fontname="Tahoma bold";
+URL="/?f=github.com/syndtr/goleveldb/leveldb/util";
+tooltip="package: github.com/syndtr/goleveldb/leveldb/util";
+        
+        "(*github.com/syndtr/goleveldb/leveldb/util.BasicReleaser).Release" [ fillcolor="moccasin" label="(*BasicReleaser).Release" penwidth="1.5" ]
+        
+    }
+
+        subgraph "cluster_github.com/thoas/stats" {
+        URL="/?f=github.com/thoas/stats";
+style="filled";
+fillcolor="lightyellow";
+fontname="Tahoma bold";
+rank="sink";
+penwidth="0.8";
+fontsize="16";
+label="stats";
+tooltip="package: github.com/thoas/stats";
+        
+        "(*github.com/thoas/stats.Stats).Data" [ fillcolor="moccasin" label="(*Stats).Data" penwidth="1.5" ]
+        "(*github.com/thoas/stats.recorderResponseWriter).WriteHeader" [ label="(*recorderResponseWriter).WriteHeader" penwidth="1.5" fillcolor="moccasin" ]
+        "(*github.com/thoas/stats.recorderResponseWriter).Write" [ label="(*recorderResponseWriter).Write" penwidth="1.5" fillcolor="moccasin" ]
+        "github.com/thoas/stats.New" [ fillcolor="moccasin" label="New" penwidth="1.5" ]
+        "(*github.com/thoas/stats.Stats).Handler" [ fillcolor="moccasin" label="(*Stats).Handler" penwidth="1.5" ]
+        
+    }
+
+    }
+
+    "github.com/miku/microblob.NewHandler$1" -> "(*github.com/thoas/stats.Stats).Data" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$1" -> "(*github.com/json-iterator/go.Encoder).Encode" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$1" -> "(*github.com/thoas/stats.recorderResponseWriter).WriteHeader" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$1" -> "(*github.com/gorilla/handlers.responseLogger).Header" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$1" -> "(*github.com/gorilla/handlers.responseLogger).WriteHeader" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$1" -> "(*github.com/json-iterator/go.frozenConfig).NewEncoder" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$2" -> "(*github.com/json-iterator/go.Encoder).Encode" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$2" -> "(*github.com/gorilla/handlers.responseLogger).Header" [ color="saddlebrown" style="dashed" ]
+    "github.com/miku/microblob.NewHandler$2" -> "(*github.com/json-iterator/go.frozenConfig).NewEncoder" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$3" -> "(*github.com/json-iterator/go.Encoder).Encode" [ color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).openDatabase" -> "github.com/syndtr/goleveldb/leveldb.OpenFile" [ color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/miku/microblob.LevelDBBackend).openDatabase" [  ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/syndtr/goleveldb/leveldb.DB).NewIterator" [ color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/syndtr/goleveldb/leveldb/util.BasicReleaser).Release" [ arrowhead="normalnoneodiamond" color="saddlebrown" style="dashed" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/syndtr/goleveldb/leveldb.dbIter).Release" [ style="dashed" arrowhead="normalnoneodiamond" color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/syndtr/goleveldb/leveldb/iterator.emptyIterator).Error" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/syndtr/goleveldb/leveldb.dbIter).Error" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/syndtr/goleveldb/leveldb/iterator.emptyIterator).Next" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Count" -> "(*github.com/syndtr/goleveldb/leveldb.dbIter).Next" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler$3" -> "(*github.com/miku/microblob.LevelDBBackend).Count" [ style="dashed" ]
+    "github.com/miku/microblob.NewHandler$3" -> "(*github.com/json-iterator/go.frozenConfig).NewEncoder" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "github.com/gorilla/mux.Vars" [ color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/thoas/stats.recorderResponseWriter).Write" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/gorilla/handlers.responseLogger).Header" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/gorilla/handlers.responseLogger).Write" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Get" -> "(*github.com/miku/microblob.LevelDBBackend).openDatabase" [  ]
+    "(*github.com/miku/microblob.LevelDBBackend).Get" -> "(*github.com/syndtr/goleveldb/leveldb.DB).Get" [ color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Get" -> "(*github.com/miku/microblob.LevelDBBackend).openBlob" [  ]
+    "(*github.com/miku/microblob.LevelDBBackend).Get" -> "github.com/miku/microblob.IsAllZero" [  ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/miku/microblob.LevelDBBackend).Get" [ style="dashed" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(github.com/miku/microblob.DebugBackend).Get" [ style="dashed" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/gorilla/handlers.responseLogger).WriteHeader" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/thoas/stats.recorderResponseWriter).WriteHeader" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/syndtr/goleveldb/leveldb/errors.ErrCorrupted).Error" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/syndtr/goleveldb/leveldb/table.ErrCorrupted).Error" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.BlobHandler).ServeHTTP" -> "(*github.com/syndtr/goleveldb/leveldb/storage.ErrCorrupted).Error" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.WithLastResponseTime$1" -> "(*github.com/miku/microblob.BlobHandler).ServeHTTP" [ style="dashed" ]
+    "github.com/miku/microblob.NewLineProcessor" -> "github.com/miku/microblob.NewLineProcessorBatchSize" [  ]
+    "github.com/miku/microblob.AppendBatchSize" -> "github.com/miku/microblob.NewLineProcessor" [  ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers$2" -> "github.com/sirupsen/logrus.Printf" [ color="saddlebrown" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers$2" -> "(github.com/miku/microblob.RegexpExtractor).ExtractKey" [ style="dashed" ]
+    "(github.com/miku/microblob.ParsingExtractor).ExtractKey" -> "github.com/miku/microblob.renderString" [  ]
+    "(github.com/miku/microblob.ParsingExtractor).ExtractKey" -> "(*github.com/json-iterator/go.frozenConfig).Unmarshal" [ style="dashed" color="saddlebrown" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers$2" -> "(github.com/miku/microblob.ParsingExtractor).ExtractKey" [ style="dashed" ]
+    "(github.com/miku/microblob.ToplevelKeyExtractor).ExtractKey" -> "(*github.com/json-iterator/go.frozenConfig).Unmarshal" [ style="dashed" color="saddlebrown" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers$2" -> "(github.com/miku/microblob.ToplevelKeyExtractor).ExtractKey" [ style="dashed" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers" -> "(github.com/miku/microblob.LineProcessor).RunWithWorkers$2" [ arrowhead="normalnoneodot" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers$1" -> "github.com/sirupsen/logrus.Printf" [ color="saddlebrown" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers$1" -> "(github.com/miku/microblob.DebugBackend).WriteEntries" [ style="dashed" ]
+    "(*github.com/miku/microblob.LevelDBBackend).WriteEntries" -> "(*github.com/miku/microblob.LevelDBBackend).openDatabase" [  ]
+    "(*github.com/miku/microblob.LevelDBBackend).WriteEntries" -> "(*github.com/syndtr/goleveldb/leveldb.Batch).Put" [ color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).WriteEntries" -> "(*github.com/syndtr/goleveldb/leveldb.DB).Write" [ color="saddlebrown" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers$1" -> "(*github.com/miku/microblob.LevelDBBackend).WriteEntries" [ style="dashed" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers" -> "(github.com/miku/microblob.LineProcessor).RunWithWorkers$1" [ arrowhead="normalnoneodot" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers" -> "github.com/schollz/progressbar.New" [ color="saddlebrown" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers" -> "github.com/sirupsen/logrus.Printf" [ color="saddlebrown" ]
+    "(github.com/miku/microblob.LineProcessor).RunWithWorkers" -> "(*github.com/schollz/progressbar.ProgressBar).Add" [ color="saddlebrown" ]
+    "github.com/miku/microblob.AppendBatchSize" -> "(github.com/miku/microblob.LineProcessor).RunWithWorkers" [  ]
+    "github.com/miku/microblob.Append" -> "github.com/miku/microblob.AppendBatchSize" [  ]
+    "(github.com/miku/microblob.UpdateHandler).ServeHTTP" -> "github.com/miku/microblob.Append" [  ]
+    "(github.com/miku/microblob.UpdateHandler).ServeHTTP" -> "(*github.com/gorilla/handlers.responseLogger).WriteHeader" [ style="dashed" color="saddlebrown" ]
+    "(github.com/miku/microblob.UpdateHandler).ServeHTTP" -> "(*github.com/gorilla/handlers.responseLogger).Write" [ style="dashed" color="saddlebrown" ]
+    "(github.com/miku/microblob.UpdateHandler).ServeHTTP" -> "(*github.com/syndtr/goleveldb/leveldb/errors.ErrCorrupted).Error" [ style="dashed" color="saddlebrown" ]
+    "(github.com/miku/microblob.UpdateHandler).ServeHTTP" -> "(*github.com/syndtr/goleveldb/leveldb/storage.ErrCorrupted).Error" [ style="dashed" color="saddlebrown" ]
+    "(github.com/miku/microblob.UpdateHandler).ServeHTTP" -> "(*github.com/syndtr/goleveldb/leveldb/table.ErrCorrupted).Error" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/gorilla/mux.Router).ServeHTTP" -> "(github.com/miku/microblob.UpdateHandler).ServeHTTP" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/miku/microblob.LevelDBBackend).Close" -> "(*github.com/syndtr/goleveldb/leveldb.DB).Close" [ color="saddlebrown" ]
+    "github.com/miku/microblob/cmd/microblob.main$1" -> "(*github.com/miku/microblob.LevelDBBackend).Close" [ color="saddlebrown" style="dashed" ]
+    "github.com/miku/microblob/cmd/microblob.main$1" -> "(github.com/miku/microblob.DebugBackend).Close" [ style="dashed" color="saddlebrown" ]
+    "github.com/miku/microblob.init" -> "github.com/miku/microblob.init#1" [  ]
+    "github.com/miku/microblob/cmd/microblob.main" -> "github.com/miku/microblob.AppendBatchSize" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler" -> "github.com/thoas/stats.New" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler" -> "github.com/miku/microblob.WithLastResponseTime" [  ]
+    "github.com/miku/microblob.NewHandler" -> "(*github.com/thoas/stats.Stats).Handler" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler" -> "github.com/gorilla/mux.NewRouter" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler" -> "(*github.com/gorilla/mux.Router).Handle" [ color="saddlebrown" ]
+    "github.com/miku/microblob.NewHandler" -> "(*github.com/gorilla/mux.Router).HandleFunc" [ color="saddlebrown" ]
+    "github.com/miku/microblob/cmd/microblob.main" -> "github.com/miku/microblob.NewHandler" [ color="saddlebrown" ]
+}

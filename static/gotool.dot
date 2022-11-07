@@ -1,0 +1,72 @@
+digraph gotool {
+    graph [  splines="true"  forcelabels="true"  pad="1,0.25"  nodesep="2"  overlap="false"  bgcolor="white"   ];
+    node [ style="solid"  shape="box"  fontname="Arial"  fontsize="14"  fontcolor="black" ];
+
+    "go" ->   "bug";
+    "go" ->   "build";
+    "go" ->   "clean";
+    "go" ->   "doc";
+    "go" ->   "env";
+    "go" ->   "fix";
+    "go" ->   "fmt";
+    "go" ->   "generate";
+    "go" ->   "get";
+    "go" ->   "install";
+    "go" ->   "list";
+    "go" ->   "mod";
+    "go" ->   "run";
+    "go" ->   "test";
+    "go" ->   "tool";
+    "go" ->   "version";
+    "go" ->   "vet";
+    "go" -> "help";
+
+    "go" [style="filled" fillcolor="orange"];
+    "get" [style="filled" fillcolor="yellow"];
+    "mod" [style="filled" fillcolor="yellow"];
+    "run" [style="filled" fillcolor="yellow"];
+    "test" [style="filled" fillcolor="yellow"];
+    "tool" [style="filled" fillcolor="lightgray"];
+    "build" [style="filled" fillcolor="yellow"];
+    "install" [style="filled" fillcolor="yellow"];
+    "fmt" [style="filled" fillcolor="yellow"];
+    "generate" [style="filled" fillcolor="yellow"];
+
+
+    "mod" ->  "download";
+    "mod" ->  "edit";
+    "mod" ->  "graph";
+    "mod" ->  "init";
+    "mod" ->  "tidy";
+    "mod" ->  "vendor";
+    "mod" ->  "verify";
+    "mod" ->  "why";
+
+
+    "init" [style="filled" fillcolor="yellow"];
+    "tidy" [style="filled" fillcolor="yellow"];
+
+    "tool" -> "addr2line";
+    "tool" -> "asm";
+    "tool" -> "buildid";
+    "tool" -> "cgo";
+    "tool" -> "compile";
+    "tool" -> "cover";
+    "tool" -> "dist";
+    "tool" -> "tool_doc";
+    "tool" -> "tool_fix";
+    "tool" -> "link";
+    "tool" -> "nm";
+    "tool" -> "objdump";
+    "tool" -> "pack";
+    "tool" -> "pprof";
+    "tool" -> "test2json";
+    "tool" -> "trace";
+    "tool" -> "tool_vet";
+
+    "tool_vet" [label="vet"];
+    "tool_fix" [label="fix"];
+    "tool_doc" [label="doc"];
+
+    "vet" [style="filled" fillcolor="yellow"];
+}

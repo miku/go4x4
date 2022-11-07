@@ -1,110 +1,84 @@
-# Go 4x4
+# Go Workshop Notes
 
-> Getting Started with Go
+> 4x 4h sessions
 
-# Getting Started with Go
+> instructor: [about](https://github.com/miku/go4x4/blob/main/About.md)
 
-* 4x 4h blocks
+## Outline
 
-## Block 1/4
 
-* Intro and Motivation
-* Hello World
-* Role of the Go tool
-    * Most used subcommands
-* Go execution model
-* Variables and basic types
-* Slices
-* Maps
-* Struct Types
-    * Struct Embedding
-* Pointers
-    * Value and Pointer receivers
-* Functions
-* Control structures
-    * for
-    * if
-    * switch
+* [Introduction](01-Intro.md)
+    * Motivation and Landscape
+    * Hello World
+    * Task: "helloworld"
+* [History](02-History.md)
+    * Timeline of events
+* [More First Programs](03-MoreFirstPrograms.md)
+    * Entry point
+    * Importing Code
+    * Visibility (public, private)
+* [Language Overview](04-Language.md)
+    * Basic Types
+    * Variable Declarations
+    * Control Structures: if, for, switch
+* [More Types](05-MoreTypes.md)
+    * Slices
+    * Maps
+* [Interfaces](06-Interfaces.md)
+    * Structural Typing
+    * Small interfaces
+    * Variants (basic, embedding, general, [ref/spec](https://go.dev/ref/spec#Interface_types))
+* [Go OOP?](07-OO.md)
+    * Is Go object oriented? [FAQ](https://go.dev/doc/faq#Is_Go_an_object-oriented_language)
+* [Error Handling](08-Errors.md)
+    * Custom Error Types
+    * Wrapping and unwrapping errors
+* [Project Layout](09-Projects.md)
+    * typical structure
+    * naming recommendations
+    * import path and resolution
+    * Go modules
+    * mixing public and private code
+    * versioning libraries
+* [IO](10-IO.md)
+    * working with files
+    * readers and writers
+* [Serialization](11-Serialization.md)
+    * struct tags
+    * JSON
+    * XML
+* [Testing Go Code](12-Testing.md)
+    * Unit Test
+    * Subtests
+    * Benchmarks
+    * Testcontainers
+* [Concurrency](13-Concurrency.md)
+    * classic and CSP style
+    * goroutines
+    * channels
+    * select
+    * the `sync` package
+    * error handling
+    * helpers: `errgroup`
+* [HTTP clients](14-HTTP.md)
+    * clients and transport
+    * standard clients, third party clients
+* [HTTP servers](15-Servers.md)
+    * handlers
+    * router, e.g. gorilla/mux
+    * testing
+* [Database access](16-Databases.md)
+    * package db, db/sql
+    * database drivers
+    * sqlx helper
 
-## Block 2/4
+----
 
-* Interfaces
-    * Structure Typing
-    * Prefer small interfaces
-    * I/O interfaces
-* Go-style object orientation
-    * Data and behaviour
-    * Composition
-* Error handling
-    * Basics
-    * Package errors
-    * Aggregation example
-    * Tracebacks
-* Concurrency primitives
-    * Goroutines
-    * Channels
-    * The select statement
-* Generics
-    * Function declaration
-    * Function call
-    * Generic struct type
-    * Type constraints
-    * Builtin contraints
-    * Example: A generic set implementation
-* Standard library highlights
-    * net and net/http
-    * db and db/sql
+Follow up:
 
-## Block 3/4
-
-* Go project layout
-    * cmd subfolder
-    * grouping files
-    * special names (tests, data files, ...)
-* Go modules
-    * Lifecycle
-    * go.mod and go.sum
-    * import compatibility rule
-* Working with files
-    * Package os
-    * Package bufio
-* Working with data formats: CSV
-    * Reading lines
-* Working with data formats: JSON
-    * Struct generators
-* Working with data formats: XML
-    * Struct generators
-* Database access with standard lib and sqlx
-    * db/sql
-    * sqlx
-    * alternatives
-* Testing
-    * builtin test framework
-    * testify example
-* Benchmarking
-    * writing benchmarks
-* Fuzz Testing
-    * fuzz testing code
-    * limitatins
-* Writing performant code
-    * track memory allocations
-    * use io streams
-
-## Block 4/4
-
-* Concurrency Utilities and Patterns
-    * sync.Pool
-    * sync.Once
-    * sync/x/errgroup
-    * sync/x/singleflight
-* Writing command line tools
-    * flags
-    * command line arguments
-    * TUI
-* Shipping Go (cross-compilation, containers, ...)
-    * compiler flags
-    * cross-compilation
-    * building containers
-* Go Gotchas
-* Wrap-Up
-    * Discussion and Q+A
+* Linkchecker
+* Project layout, modules
+    * add library
+    * add service
+* Services
+* Misc

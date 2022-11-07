@@ -1,0 +1,1599 @@
+{
+	"type": {
+		"name": "io.Writer",
+		"pos": "/usr/local/go/src/io/io.go:90:6",
+		"kind": "interface"
+	},
+	"to": [
+		{
+			"name": "*archive/tar.Writer",
+			"pos": "/usr/local/go/src/archive/tar/writer.go:19:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/tar.failOnceWriter",
+			"pos": "/usr/local/go/src/archive/tar/writer_test.go:828:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/tar.regFileWriter",
+			"pos": "/usr/local/go/src/archive/tar/writer.go:486:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/tar.sparseFileWriter",
+			"pos": "/usr/local/go/src/archive/tar/writer.go:522:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/tar.testFile",
+			"pos": "/usr/local/go/src/archive/tar/tar_test.go:30:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/zip.countWriter",
+			"pos": "/usr/local/go/src/archive/zip/writer.go:502:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/zip.fileWriter",
+			"pos": "/usr/local/go/src/archive/zip/writer.go:435:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/zip.pooledFlateWriter",
+			"pos": "/usr/local/go/src/archive/zip/register.go:41:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/zip.rleBuffer",
+			"pos": "/usr/local/go/src/archive/zip/zip_test.go:166:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*archive/zip.suffixSaver",
+			"pos": "/usr/local/go/src/archive/zip/zip_test.go:395:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*bufio.Writer",
+			"pos": "/usr/local/go/src/bufio/bufio.go:544:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*bufio_test.writeCountingDiscard",
+			"pos": "/usr/local/go/src/bufio/bufio_test.go:1118:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*bytes.Buffer",
+			"pos": "/usr/local/go/src/bytes/buffer.go:20:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/compile/internal/gc.dumper",
+			"pos": "/usr/local/go/src/cmd/compile/internal/gc/dump.go:64:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/compile/internal/gc.intWriter",
+			"pos": "/usr/local/go/src/cmd/compile/internal/gc/iexport.go:1409:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/compile/internal/syntax.dumper",
+			"pos": "/usr/local/go/src/cmd/compile/internal/syntax/dumper.go:43:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/doc.pkgBuffer",
+			"pos": "/usr/local/go/src/cmd/doc/pkg.go:49:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/go/internal/cache.Hash",
+			"pos": "/usr/local/go/src/cmd/go/internal/cache/hash.go:25:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/go/internal/help.commentWriter",
+			"pos": "/usr/local/go/src/cmd/go/internal/help/help.go:120:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/go/internal/help.errWriter",
+			"pos": "/usr/local/go/src/cmd/go/internal/help/help.go:151:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/go/internal/list.TrackingWriter",
+			"pos": "/usr/local/go/src/cmd/go/internal/list/list.go:603:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/go/internal/modfile.printer",
+			"pos": "/usr/local/go/src/cmd/go/internal/modfile/print.go:22:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/internal/test2json.converter",
+			"pos": "/usr/local/go/src/cmd/internal/test2json/test2json.go:51:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/link/internal/ld.OutBuf",
+			"pos": "/usr/local/go/src/cmd/link/internal/ld/outbuf.go:32:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/test2json.countWriter",
+			"pos": "/usr/local/go/src/cmd/test2json/main.go:133:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/trace.countingWriter",
+			"pos": "/usr/local/go/src/cmd/trace/trace.go:387:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*cmd/vendor/golang.org/x/crypto/ssh/terminal.Terminal",
+			"pos": "/usr/local/go/src/cmd/vendor/golang.org/x/crypto/ssh/terminal/terminal.go:40:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/flate.Writer",
+			"pos": "/usr/local/go/src/compress/flate/deflate.go:701:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/flate.dictWriter",
+			"pos": "/usr/local/go/src/compress/flate/deflate.go:691:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/flate.errorWriter",
+			"pos": "/usr/local/go/src/compress/flate/writer_test.go:45:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/flate.failWriter",
+			"pos": "/usr/local/go/src/compress/flate/deflate_test.go:651:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/flate.syncBuffer",
+			"pos": "/usr/local/go/src/compress/flate/deflate_test.go:170:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/gzip.Writer",
+			"pos": "/usr/local/go/src/compress/gzip/gzip.go:28:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/gzip.limitedWriter",
+			"pos": "/usr/local/go/src/compress/gzip/gzip_test.go:241:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/lzw.encoder",
+			"pos": "/usr/local/go/src/compress/lzw/writer.go:48:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/lzw.errWriteCloser",
+			"pos": "/usr/local/go/src/compress/lzw/writer.go:21:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*compress/zlib.Writer",
+			"pos": "/usr/local/go/src/compress/zlib/writer.go:28:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/hmac.hmac",
+			"pos": "/usr/local/go/src/crypto/hmac/hmac.go:37:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/md5.digest",
+			"pos": "/usr/local/go/src/crypto/md5/md5.go:38:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/sha1.digest",
+			"pos": "/usr/local/go/src/crypto/sha1/sha1.go:38:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/sha256.digest",
+			"pos": "/usr/local/go/src/crypto/sha256/sha256.go:51:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/sha512.digest",
+			"pos": "/usr/local/go/src/crypto/sha512/sha512.go:82:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.Conn",
+			"pos": "/usr/local/go/src/crypto/tls/conn.go:25:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.brokenConn",
+			"pos": "/usr/local/go/src/crypto/tls/handshake_client_test.go:1596:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.changeImplConn",
+			"pos": "/usr/local/go/src/crypto/tls/tls_test.go:710:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.cthWrapper",
+			"pos": "/usr/local/go/src/crypto/tls/cipher_suites.go:338:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.finishedHash",
+			"pos": "/usr/local/go/src/crypto/tls/prf.go:213:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.opensslOutputSink",
+			"pos": "/usr/local/go/src/crypto/tls/handshake_client_test.go:73:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.recordingConn",
+			"pos": "/usr/local/go/src/crypto/tls/handshake_test.go:84:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.slowConn",
+			"pos": "/usr/local/go/src/crypto/tls/tls_test.go:805:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*crypto/tls.writeCountingConn",
+			"pos": "/usr/local/go/src/crypto/tls/handshake_client_test.go:1643:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/ascii85.encoder",
+			"pos": "/usr/local/go/src/encoding/ascii85/ascii85.go:95:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/base32.encoder",
+			"pos": "/usr/local/go/src/encoding/base32/base32.go:184:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/base64.encoder",
+			"pos": "/usr/local/go/src/encoding/base64/base64.go:180:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/gob.encBuffer",
+			"pos": "/usr/local/go/src/encoding/gob/encode.go:37:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/hex.dumper",
+			"pos": "/usr/local/go/src/encoding/hex/hex.go:219:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/hex.encoder",
+			"pos": "/usr/local/go/src/encoding/hex/hex.go:140:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/json.encodeState",
+			"pos": "/usr/local/go/src/encoding/json/encode.go:278:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/pem.lineBreaker",
+			"pos": "/usr/local/go/src/encoding/pem/pem.go:211:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*encoding/xml.limitedBytesWriter",
+			"pos": "/usr/local/go/src/encoding/xml/marshal_test.go:1816:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*fmt.pp",
+			"pos": "/usr/local/go/src/fmt/print.go:105:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.Builder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:1635:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.ColumnBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:25:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.DeleteBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:643:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.DescribeBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:187:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.DropIndexBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:437:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.ForeignKeyBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:266:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.Func",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:1042:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.IndexBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:371:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.InsertBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:479:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.Predicate",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:696:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.ReferenceBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:336:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.SelectTable",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:1132:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.Selector",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:1217:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.TableAlter",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:206:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.TableBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:70:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.UpdateBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:553:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/facebookincubator/ent/dialect/sql.WithBuilder",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/builder.go:1530:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/go4org/go4/net/throttle.conn",
+			"pos": "/home/tir/go/pkg/mod/github.com/go4org/go4@v0.0.0-20191010144846-132d2879e1e9/net/throttle/throttle.go:72:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/go4org/go4/writerutil.PrefixSuffixSaver",
+			"pos": "/home/tir/go/pkg/mod/github.com/go4org/go4@v0.0.0-20191010144846-132d2879e1e9/writerutil/writerutil.go:29:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/golangci/golangci-lint/internal/cache.Hash",
+			"pos": "/home/tir/go/pkg/mod/github.com/golangci/golangci-lint@v1.21.0/internal/cache/hash.go:24:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/golangci/misspell.appendSliceWriter",
+			"pos": "/home/tir/go/pkg/mod/github.com/golangci/misspell@v0.0.0-20180809174111-950f5d19e770/stringreplacer.go:239:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/gorilla/websocket.flateWriteWrapper",
+			"pos": "/home/tir/go/pkg/mod/github.com/gorilla/websocket@v1.4.0/compression.go:92:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/gorilla/websocket.messageWriter",
+			"pos": "/home/tir/go/pkg/mod/github.com/gorilla/websocket@v1.4.0/conn.go:512:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/gorilla/websocket.prepareConn",
+			"pos": "/home/tir/go/pkg/mod/github.com/gorilla/websocket@v1.4.0/prepared.go:96:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/gorilla/websocket.truncWriter",
+			"pos": "/home/tir/go/pkg/mod/github.com/gorilla/websocket@v1.4.0/compression.go:58:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/gorilla/websocket.writeHook",
+			"pos": "/home/tir/go/pkg/mod/github.com/gorilla/websocket@v1.4.0/server.go:342:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/json-iterator/go.Stream",
+			"pos": "/home/tir/go/pkg/mod/github.com/json-iterator/go@v1.1.6/stream.go:9:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/mattn/go-colorable.NonColorable",
+			"pos": "/home/tir/go/pkg/mod/github.com/mattn/go-colorable@v0.1.4/noncolorable.go:9:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/rogpeppe/go-internal/modfile.printer",
+			"pos": "/home/tir/go/pkg/mod/github.com/rogpeppe/go-internal@v1.3.0/modfile/print.go:22:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/rogpeppe/godef/go/ast.printer",
+			"pos": "/home/tir/go/pkg/mod/github.com/rogpeppe/godef@v1.1.1/go/ast/print.go:79:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/rogpeppe/godef/go/printer.trimmer",
+			"pos": "/home/tir/go/pkg/mod/github.com/rogpeppe/godef@v1.1.1/go/printer/printer.go:819:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/stamblerre/gocode_test.writer",
+			"pos": "/home/tir/go/pkg/mod/github.com/stamblerre/gocode@v0.0.0-20190327203809-810592086997/gocode_test.go:158:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/valyala/quicktemplate.ByteBuffer",
+			"pos": "/home/tir/go/pkg/mod/github.com/valyala/quicktemplate@v1.2.0/bytebuffer.go:13:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/valyala/quicktemplate.QWriter",
+			"pos": "/home/tir/go/pkg/mod/github.com/valyala/quicktemplate@v1.2.0/writer.go:67:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*github.com/valyala/quicktemplate.htmlEscapeWriter",
+			"pos": "/home/tir/go/pkg/mod/github.com/valyala/quicktemplate@v1.2.0/htmlescapewriter.go:8:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*go/ast.printer",
+			"pos": "/usr/local/go/src/go/ast/print.go:77:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*go/printer.limitWriter",
+			"pos": "/usr/local/go/src/go/printer/printer_test.go:616:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*go/printer.trimmer",
+			"pos": "/usr/local/go/src/go/printer/printer.go:1172:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*go/types_test.gen",
+			"pos": "/usr/local/go/src/go/types/hilbert_test.go:83:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/blake2b.digest",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/blake2b/blake2b.go:144:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/blake2b.xof",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/blake2b/blake2x.go:74:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/blake2s.digest",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/blake2s/blake2s.go:114:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/blake2s.xof",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/blake2s/blake2x.go:74:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/md4.digest",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/md4/md4.go:36:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/openpgp.canonicalTextHash",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190308221718-c2843e01d9a2/openpgp/canonical_text.go:15:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/openpgp/armor.encoding",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/openpgp/armor/encode.go:100:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/openpgp/armor.lineBreaker",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/openpgp/armor/encode.go:30:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/openpgp/clearsign.dashEscaper",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/openpgp/clearsign/clearsign.go:198:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/openpgp/packet.partialLengthWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/openpgp/packet/packet.go:100:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/openpgp/packet.seMDCWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/openpgp/packet/symmetrically_encrypted.go:213:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/poly1305.MAC",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/poly1305/poly1305.go:56:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/poly1305.mac",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/poly1305/sum_amd64.go:32:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/poly1305.macGeneric",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/poly1305/sum_generic.go:37:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/ripemd160.digest",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/ripemd160/ripemd160.go:40:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/sha3.state",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/sha3/sha3.go:23:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/ssh.channel",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/channel.go:150:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/ssh.closerBuffer",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/transport_test.go:77:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/ssh.extChannel",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/channel.go:478:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/ssh.singleWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/session.go:328:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/ssh/terminal.MockTerminal",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/ssh/terminal/terminal_test.go:17:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/crypto/ssh/terminal.Terminal",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/ssh/terminal/terminal.go:40:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/net/websocket.Conn",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/net@v0.0.0-20190620200207-3b0461eec859/websocket/websocket.go:164:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/net/websocket.hybiFrameWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/net@v0.0.0-20190620200207-3b0461eec859/websocket/hybi.go:181:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/tools/cmd/godoc.httpResponseRecorder",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/tools@v0.0.0-20191018212557-ed542cd5b28a/cmd/godoc/main.go:88:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/tools/go/internal/gcimporter.intWriter",
+			"pos": "/home/tir/go/pkg/mod/github.com/golangci/tools@v0.0.0-20190915081525-6aa350649b1c/go/internal/gcimporter/iexport.go:656:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/tools/godoc.tconv",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/tools@v0.0.0-20191018212557-ed542cd5b28a/godoc/tab.go:19:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/tools/godoc.writerCapturesErr",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/tools@v0.0.0-20191018212557-ed542cd5b28a/godoc/server.go:512:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/tools/playground/socket.messageWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/tools@v0.0.0-20191018212557-ed542cd5b28a/playground/socket/socket.go:481:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*golang.org/x/xerrors.state",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/xerrors@v0.0.0-20190717185122-a985d3407aa7/adaptor.go:128:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/adler32.digest",
+			"pos": "/usr/local/go/src/hash/adler32/adler32.go:34:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/crc32.digest",
+			"pos": "/usr/local/go/src/hash/crc32/crc32.go:137:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/crc64.digest",
+			"pos": "/usr/local/go/src/hash/crc64/crc64.go:90:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/fnv.sum128",
+			"pos": "/usr/local/go/src/hash/fnv/fnv.go:26:2",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/fnv.sum128a",
+			"pos": "/usr/local/go/src/hash/fnv/fnv.go:27:2",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/fnv.sum32",
+			"pos": "/usr/local/go/src/hash/fnv/fnv.go:22:2",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/fnv.sum32a",
+			"pos": "/usr/local/go/src/hash/fnv/fnv.go:23:2",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/fnv.sum64",
+			"pos": "/usr/local/go/src/hash/fnv/fnv.go:24:2",
+			"kind": "pointer"
+		},
+		{
+			"name": "*hash/fnv.sum64a",
+			"pos": "/usr/local/go/src/hash/fnv/fnv.go:25:2",
+			"kind": "pointer"
+		},
+		{
+			"name": "*honnef.co/go/tools/internal/cache.Hash",
+			"pos": "/home/tir/go/pkg/mod/honnef.co/go/tools@v0.0.1-2019.2.3/internal/cache/hash.go:24:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*image/png.encoder",
+			"pos": "/usr/local/go/src/image/png/writer.go:38:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*internal/poll.FD",
+			"pos": "/usr/local/go/src/internal/poll/fd_unix.go:18:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*internal/trace.Writer",
+			"pos": "/usr/local/go/src/internal/trace/writer.go:6:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io.PipeWriter",
+			"pos": "/usr/local/go/src/io/pipe.go:143:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io.multiWriter",
+			"pos": "/usr/local/go/src/io/multi.go:54:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io.pipe",
+			"pos": "/usr/local/go/src/io/pipe.go:32:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io_test.Buffer",
+			"pos": "/usr/local/go/src/io/io_test.go:17:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io_test.dataAndErrorBuffer",
+			"pos": "/usr/local/go/src/io/io_test.go:256:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io_test.noReadFrom",
+			"pos": "/usr/local/go/src/io/io_test.go:198:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io_test.writeStringChecker",
+			"pos": "/usr/local/go/src/io/multi_test.go:96:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*io_test.writeToChecker",
+			"pos": "/usr/local/go/src/io/io_test.go:91:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*log/syslog.Writer",
+			"pos": "/usr/local/go/src/log/syslog/syslog.go:76:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*mime/multipart.part",
+			"pos": "/usr/local/go/src/mime/multipart/writer.go:181:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*mime/quotedprintable.Writer",
+			"pos": "/usr/local/go/src/mime/quotedprintable/writer.go:12:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.IPConn",
+			"pos": "/usr/local/go/src/net/iprawsock.go:99:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.TCPConn",
+			"pos": "/usr/local/go/src/net/tcpsock.go:85:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.UDPConn",
+			"pos": "/usr/local/go/src/net/udpsock.go:91:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.UnixConn",
+			"pos": "/usr/local/go/src/net/unixsock.go:68:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.conn",
+			"pos": "/usr/local/go/src/net/net.go:171:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.fakeDNSConn",
+			"pos": "/usr/local/go/src/net/dnsclient_unix_test.go:804:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.fakeDNSPacketConn",
+			"pos": "/usr/local/go/src/net/dnsclient_unix_test.go:869:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.netFD",
+			"pos": "/usr/local/go/src/net/fd_unix.go:19:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net.pipe",
+			"pos": "/usr/local/go/src/net/pipe.go:92:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.chunkWriter",
+			"pos": "/usr/local/go/src/net/http/server.go:343:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.countingWriter",
+			"pos": "/usr/local/go/src/net/http/fs.go:815:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.http2bufferedWriter",
+			"pos": "/usr/local/go/src/net/http/h2_bundle.go:3320:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.http2dataBuffer",
+			"pos": "/usr/local/go/src/net/http/h2_bundle.go:1010:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.http2pipe",
+			"pos": "/usr/local/go/src/net/http/h2_bundle.go:3464:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.http2responseWriter",
+			"pos": "/usr/local/go/src/net/http/h2_bundle.go:5886:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.loggingConn",
+			"pos": "/usr/local/go/src/net/http/server.go:3378:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.mockTransferWriter",
+			"pos": "/usr/local/go/src/net/http/transfer_test.go:98:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.populateResponse",
+			"pos": "/usr/local/go/src/net/http/filetransport.go:69:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.response",
+			"pos": "/usr/local/go/src/net/http/server.go:417:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http.timeoutWriter",
+			"pos": "/usr/local/go/src/net/http/server.go:3258:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/cgi.customWriterRecorder",
+			"pos": "/usr/local/go/src/net/http/cgi/matryoshka_test.go:63:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/cgi.limitWriter",
+			"pos": "/usr/local/go/src/net/http/cgi/matryoshka_test.go:72:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/cgi.response",
+			"pos": "/usr/local/go/src/net/http/cgi/child.go:167:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/fcgi.response",
+			"pos": "/usr/local/go/src/net/http/fcgi/child.go:76:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/fcgi.streamWriter",
+			"pos": "/usr/local/go/src/net/http/fcgi/fcgi.go:245:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/fcgi.writeOnlyConn",
+			"pos": "/usr/local/go/src/net/http/fcgi/fcgi_test.go:118:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/httptest.ResponseRecorder",
+			"pos": "/usr/local/go/src/net/http/httptest/recorder.go:20:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/httputil.maxLatencyWriter",
+			"pos": "/usr/local/go/src/net/http/httputil/reverseproxy.go:446:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http/internal.chunkedWriter",
+			"pos": "/usr/local/go/src/net/http/internal/chunked.go:189:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http_test.lockedBytesBuffer",
+			"pos": "/usr/local/go/src/net/http/clientserver_test.go:1220:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http_test.logWritesConn",
+			"pos": "/usr/local/go/src/net/http/transport_test.go:3699:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http_test.slowTestConn",
+			"pos": "/usr/local/go/src/net/http/serve_test.go:2178:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http_test.testConn",
+			"pos": "/usr/local/go/src/net/http/serve_test.go:104:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/http_test.writeCountingConn",
+			"pos": "/usr/local/go/src/net/http/client_test.go:798:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*net/textproto.dotWriter",
+			"pos": "/usr/local/go/src/net/textproto/writer.go:55:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*os.File",
+			"pos": "/usr/local/go/src/os/types.go:16:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*os/exec.prefixSuffixSaver",
+			"pos": "/usr/local/go/src/os/exec/exec.go:658:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*os/exec_test.badWriter",
+			"pos": "/usr/local/go/src/os/exec/exec_test.go:988:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*reflect_test.WC",
+			"pos": "/usr/local/go/src/reflect/all_test.go:1938:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*strings.Builder",
+			"pos": "/usr/local/go/src/strings/builder.go:15:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*strings.appendSliceWriter",
+			"pos": "/usr/local/go/src/strings/replace.go:300:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*testing/iotest.truncateWriter",
+			"pos": "/usr/local/go/src/testing/iotest/writer.go:15:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*testing/iotest.writeLogger",
+			"pos": "/usr/local/go/src/testing/iotest/logger.go:12:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*text/tabwriter.Writer",
+			"pos": "/usr/local/go/src/text/tabwriter/tabwriter.go:91:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*text/tabwriter_test.buffer",
+			"pos": "/usr/local/go/src/text/tabwriter/tabwriter_test.go:16:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*vendor/golang.org/x/crypto/poly1305.MAC",
+			"pos": "/usr/local/go/src/vendor/golang.org/x/crypto/poly1305/poly1305.go:56:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*vendor/golang.org/x/crypto/poly1305.mac",
+			"pos": "/usr/local/go/src/vendor/golang.org/x/crypto/poly1305/sum_amd64.go:32:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*vendor/golang.org/x/crypto/poly1305.macGeneric",
+			"pos": "/usr/local/go/src/vendor/golang.org/x/crypto/poly1305/sum_generic.go:37:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*vendor/golang.org/x/net/http2/hpack.Decoder",
+			"pos": "/usr/local/go/src/vendor/golang.org/x/net/http2/hpack/hpack.go:79:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*vendor/golang.org/x/text/transform.Writer",
+			"pos": "/usr/local/go/src/vendor/golang.org/x/text/transform/transform.go:209:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "*vendor/golang.org/x/text/unicode/norm.normWriter",
+			"pos": "/usr/local/go/src/vendor/golang.org/x/text/unicode/norm/readwriter.go:9:6",
+			"kind": "pointer"
+		},
+		{
+			"name": "archive/tar.fileWriter",
+			"pos": "/usr/local/go/src/archive/tar/writer.go:37:6",
+			"kind": "interface"
+		},
+		{
+			"name": "archive/tar.testNonEmptyWriter",
+			"pos": "/usr/local/go/src/archive/tar/writer_test.go:1012:6",
+			"kind": "struct"
+		},
+		{
+			"name": "archive/tar.zeroWriter",
+			"pos": "/usr/local/go/src/archive/tar/writer.go:631:6",
+			"kind": "struct"
+		},
+		{
+			"name": "archive/zip.dirWriter",
+			"pos": "/usr/local/go/src/archive/zip/writer.go:426:6",
+			"kind": "struct"
+		},
+		{
+			"name": "archive/zip.fakeHash32",
+			"pos": "/usr/local/go/src/archive/zip/zip_test.go:276:6",
+			"kind": "struct"
+		},
+		{
+			"name": "archive/zip.nopCloser",
+			"pos": "/usr/local/go/src/archive/zip/writer.go:513:6",
+			"kind": "struct"
+		},
+		{
+			"name": "bufio.ReadWriter",
+			"pos": "/usr/local/go/src/bufio/bufio.go:755:6",
+			"kind": "struct"
+		},
+		{
+			"name": "bufio_test.errorReaderFromTest",
+			"pos": "/usr/local/go/src/bufio/bufio_test.go:1036:6",
+			"kind": "struct"
+		},
+		{
+			"name": "bufio_test.errorWriterTest",
+			"pos": "/usr/local/go/src/bufio/bufio_test.go:583:6",
+			"kind": "struct"
+		},
+		{
+			"name": "bufio_test.errorWriterToTest",
+			"pos": "/usr/local/go/src/bufio/bufio_test.go:974:6",
+			"kind": "struct"
+		},
+		{
+			"name": "bufio_test.onlyWriter",
+			"pos": "/usr/local/go/src/bufio/bufio_test.go:1463:6",
+			"kind": "struct"
+		},
+		{
+			"name": "cmd/compile/internal/ssa.writeSyncer",
+			"pos": "/usr/local/go/src/cmd/compile/internal/ssa/func.go:18:6",
+			"kind": "interface"
+		},
+		{
+			"name": "cmd/go/internal/lockedfile.File",
+			"pos": "/usr/local/go/src/cmd/go/internal/lockedfile/lockedfile.go:24:6",
+			"kind": "struct"
+		},
+		{
+			"name": "cmd/go/internal/lockedfile.osFile",
+			"pos": "/usr/local/go/src/cmd/go/internal/lockedfile/lockedfile.go:31:6",
+			"kind": "struct"
+		},
+		{
+			"name": "cmd/go/internal/modfetch/codehost.deleteCloser",
+			"pos": "/usr/local/go/src/cmd/go/internal/modfetch/codehost/vcs.go:463:6",
+			"kind": "struct"
+		},
+		{
+			"name": "cmd/go/internal/test.lockedStdout",
+			"pos": "/usr/local/go/src/cmd/go/internal/test/test.go:1042:6",
+			"kind": "struct"
+		},
+		{
+			"name": "cmd/internal/bio.Writer",
+			"pos": "/usr/local/go/src/cmd/internal/bio/buf.go:22:6",
+			"kind": "struct"
+		},
+		{
+			"name": "cmd/internal/bio.mustWriter",
+			"pos": "/usr/local/go/src/cmd/internal/bio/must.go:25:6",
+			"kind": "struct"
+		},
+		{
+			"name": "cmd/link/internal/wasm.nameWriter",
+			"pos": "/usr/local/go/src/cmd/link/internal/wasm/asm.go:511:6",
+			"kind": "interface"
+		},
+		{
+			"name": "cmd/vendor/github.com/google/pprof/internal/graph.builder",
+			"pos": "/usr/local/go/src/cmd/vendor/github.com/google/pprof/internal/graph/dotgraph.go:101:6",
+			"kind": "struct"
+		},
+		{
+			"name": "crypto/cipher.StreamWriter",
+			"pos": "/usr/local/go/src/crypto/cipher/io.go:30:6",
+			"kind": "struct"
+		},
+		{
+			"name": "crypto/tls.constantTimeHash",
+			"pos": "/usr/local/go/src/crypto/tls/cipher_suites.go:331:6",
+			"kind": "interface"
+		},
+		{
+			"name": "crypto/tls.hairpinConn",
+			"pos": "/usr/local/go/src/crypto/tls/conn_test.go:268:6",
+			"kind": "struct"
+		},
+		{
+			"name": "encoding/csv.errorWriter",
+			"pos": "/usr/local/go/src/encoding/csv/writer_test.go:70:6",
+			"kind": "struct"
+		},
+		{
+			"name": "encoding/xml.errWriter",
+			"pos": "/usr/local/go/src/encoding/xml/xml_test.go:723:6",
+			"kind": "struct"
+		},
+		{
+			"name": "encoding/xml.printer",
+			"pos": "/usr/local/go/src/encoding/xml/marshal.go:303:6",
+			"kind": "struct"
+		},
+		{
+			"name": "fmt.State",
+			"pos": "/usr/local/go/src/fmt/print.go:38:6",
+			"kind": "interface"
+		},
+		{
+			"name": "github.com/facebookincubator/ent/dialect/sql/schema.WriteDriver",
+			"pos": "/home/tir/go/pkg/mod/github.com/facebookincubator/ent@v0.0.0-20191017212932-c3135d03a644/dialect/sql/schema/writer.go:16:6",
+			"kind": "struct"
+		},
+		{
+			"name": "github.com/go4org/go4/wkfs.FileWriter",
+			"pos": "/home/tir/go/pkg/mod/github.com/go4org/go4@v0.0.0-20191010144846-132d2879e1e9/wkfs/wkfs.go:46:6",
+			"kind": "interface"
+		},
+		{
+			"name": "github.com/google/renameio.PendingFile",
+			"pos": "/home/tir/go/pkg/mod/github.com/google/renameio@v0.1.0/tempfile.go:76:6",
+			"kind": "struct"
+		},
+		{
+			"name": "go4.org/wkfs.FileWriter",
+			"pos": "/home/tir/go/src/go4.org/wkfs/wkfs.go:46:6",
+			"kind": "interface"
+		},
+		{
+			"name": "golang.org/x/crypto/blake2b.XOF",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/blake2b/blake2x.go:15:6",
+			"kind": "interface"
+		},
+		{
+			"name": "golang.org/x/crypto/blake2s.XOF",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/blake2s/blake2x.go:15:6",
+			"kind": "interface"
+		},
+		{
+			"name": "golang.org/x/crypto/openpgp.noOpCloser",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190308221718-c2843e01d9a2/openpgp/write.go:408:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/openpgp.recordingHash",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/openpgp/canonical_text_test.go:12:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/openpgp.signatureWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190308221718-c2843e01d9a2/openpgp/write.go:370:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/openpgp/packet.compressedWriteCloser",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/openpgp/packet/compressed.go:67:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/openpgp/packet.noOpCloser",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/openpgp/packet/symmetrically_encrypted.go:240:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/sha3.ShakeHash",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/sha3/shake.go:25:6",
+			"kind": "interface"
+		},
+		{
+			"name": "golang.org/x/crypto/sha3.cshakeState",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20190923035154-9ee001bba392/sha3/shake.go:43:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/ssh.Channel",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/channel.go:49:6",
+			"kind": "interface"
+		},
+		{
+			"name": "golang.org/x/crypto/ssh.chanConn",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/tcpip.go:436:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/ssh.noReadConn",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/session_test.go:684:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/ssh.sessionStdin",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/session.go:530:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/ssh.tcpChan",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/tcpip.go:430:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/crypto/ssh.truncatingMAC",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/crypto@v0.0.0-20191011191535-87dc89f01550/ssh/mac.go:24:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/net/html.writer",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/net@v0.0.0-20190620200207-3b0461eec859/html/render.go:15:6",
+			"kind": "interface"
+		},
+		{
+			"name": "golang.org/x/net/websocket.frameWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/net@v0.0.0-20190620200207-3b0461eec859/websocket/websocket.go:146:6",
+			"kind": "interface"
+		},
+		{
+			"name": "golang.org/x/net/websocket.hybiFrameWriterFactory",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/net@v0.0.0-20190620200207-3b0461eec859/websocket/hybi.go:246:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/tools/godoc.countingWriter",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/tools@v0.0.0-20191018212557-ed542cd5b28a/godoc/index.go:1549:6",
+			"kind": "struct"
+		},
+		{
+			"name": "golang.org/x/xerrors.printer",
+			"pos": "/home/tir/go/pkg/mod/golang.org/x/xerrors@v0.0.0-20190717185122-a985d3407aa7/adaptor.go:176:6",
+			"kind": "struct"
+		},
+		{
+			"name": "hash.Hash",
+			"pos": "/usr/local/go/src/hash/hash.go:26:6",
+			"kind": "interface"
+		},
+		{
+			"name": "hash.Hash32",
+			"pos": "/usr/local/go/src/hash/hash.go:49:6",
+			"kind": "interface"
+		},
+		{
+			"name": "hash.Hash64",
+			"pos": "/usr/local/go/src/hash/hash.go:55:6",
+			"kind": "interface"
+		},
+		{
+			"name": "image/gif.blockWriter",
+			"pos": "/usr/local/go/src/image/gif/writer.go:69:6",
+			"kind": "struct"
+		},
+		{
+			"name": "image/gif.writer",
+			"pos": "/usr/local/go/src/image/gif/writer.go:43:6",
+			"kind": "interface"
+		},
+		{
+			"name": "image/jpeg.writer",
+			"pos": "/usr/local/go/src/image/jpeg/writer.go:211:6",
+			"kind": "interface"
+		},
+		{
+			"name": "io.ReadWriteCloser",
+			"pos": "/usr/local/go/src/io/io.go:138:6",
+			"kind": "interface"
+		},
+		{
+			"name": "io.ReadWriteSeeker",
+			"pos": "/usr/local/go/src/io/io.go:157:6",
+			"kind": "interface"
+		},
+		{
+			"name": "io.ReadWriter",
+			"pos": "/usr/local/go/src/io/io.go:120:6",
+			"kind": "interface"
+		},
+		{
+			"name": "io.WriteCloser",
+			"pos": "/usr/local/go/src/io/io.go:132:6",
+			"kind": "interface"
+		},
+		{
+			"name": "io.WriteSeeker",
+			"pos": "/usr/local/go/src/io/io.go:151:6",
+			"kind": "interface"
+		},
+		{
+			"name": "io/ioutil.devNull",
+			"pos": "/usr/local/go/src/io/ioutil/ioutil.go:122:6",
+			"kind": "basic"
+		},
+		{
+			"name": "io_test.errWriter",
+			"pos": "/usr/local/go/src/io/io_test.go:124:6",
+			"kind": "struct"
+		},
+		{
+			"name": "io_test.writerFunc",
+			"pos": "/usr/local/go/src/io/multi_test.go:146:6",
+			"kind": "signature"
+		},
+		{
+			"name": "net.Conn",
+			"pos": "/usr/local/go/src/net/net.go:113:6",
+			"kind": "interface"
+		},
+		{
+			"name": "net.writerOnly",
+			"pos": "/usr/local/go/src/net/net.go:617:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.ResponseWriter",
+			"pos": "/usr/local/go/src/net/http/server.go:94:6",
+			"kind": "interface"
+		},
+		{
+			"name": "net/http.bufioFlushWriter",
+			"pos": "/usr/local/go/src/net/http/transfer.go:1100:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.checkConnErrorWriter",
+			"pos": "/usr/local/go/src/net/http/server.go:3422:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.dumpConn",
+			"pos": "/usr/local/go/src/net/http/requestwrite_test.go:947:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.headerOnlyResponseWriter",
+			"pos": "/usr/local/go/src/net/http/cookie_test.go:169:6",
+			"kind": "map"
+		},
+		{
+			"name": "net/http.http2chunkWriter",
+			"pos": "/usr/local/go/src/net/http/h2_bundle.go:5924:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.http2pipeBuffer",
+			"pos": "/usr/local/go/src/net/http/h2_bundle.go:3474:6",
+			"kind": "interface"
+		},
+		{
+			"name": "net/http.http2stickyErrWriter",
+			"pos": "/usr/local/go/src/net/http/h2_bundle.go:6851:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.persistConnWriter",
+			"pos": "/usr/local/go/src/net/http/transport.go:1577:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.readWriteCloserBody",
+			"pos": "/usr/local/go/src/net/http/transport.go:2169:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.socksConn",
+			"pos": "/usr/local/go/src/net/http/socks_bundle.go:261:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http.writerFunc",
+			"pos": "/usr/local/go/src/net/http/requestwrite_test.go:828:6",
+			"kind": "signature"
+		},
+		{
+			"name": "net/http.writerOnly",
+			"pos": "/usr/local/go/src/net/http/server.go:548:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http/fcgi.bufWriter",
+			"pos": "/usr/local/go/src/net/http/fcgi/fcgi.go:224:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http/fcgi.nilCloser",
+			"pos": "/usr/local/go/src/net/http/fcgi/fcgi_test.go:70:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http/fcgi.nopWriteCloser",
+			"pos": "/usr/local/go/src/net/http/fcgi/fcgi_test.go:223:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http/fcgi.rwNopCloser",
+			"pos": "/usr/local/go/src/net/http/fcgi/fcgi_test.go:258:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http/httputil.dumpConn",
+			"pos": "/usr/local/go/src/net/http/httputil/dump.go:42:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http/httputil.writeFlusher",
+			"pos": "/usr/local/go/src/net/http/httputil/reverseproxy.go:441:6",
+			"kind": "interface"
+		},
+		{
+			"name": "net/http/internal.FlushAfterChunkWriter",
+			"pos": "/usr/local/go/src/net/http/internal/chunked.go:232:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.blockingRemoteAddrConn",
+			"pos": "/usr/local/go/src/net/http/serve_test.go:1267:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.chanWriter",
+			"pos": "/usr/local/go/src/net/http/client_test.go:62:6",
+			"kind": "chan"
+		},
+		{
+			"name": "net/http_test.closeWriteTestConn",
+			"pos": "/usr/local/go/src/net/http/serve_test.go:4327:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.countedConn",
+			"pos": "/usr/local/go/src/net/http/transport_test.go:1662:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.funcConn",
+			"pos": "/usr/local/go/src/net/http/transport_test.go:4698:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.funcWriter",
+			"pos": "/usr/local/go/src/net/http/transport_test.go:5032:6",
+			"kind": "signature"
+		},
+		{
+			"name": "net/http_test.http09Writer",
+			"pos": "/usr/local/go/src/net/http/npn_test.go:127:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.logWrites",
+			"pos": "/usr/local/go/src/net/http/request_test.go:639:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.noteCloseConn",
+			"pos": "/usr/local/go/src/net/http/clientserver_test.go:1289:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.responseWriterJustWriter",
+			"pos": "/usr/local/go/src/net/http/request_test.go:735:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.rwTestConn",
+			"pos": "/usr/local/go/src/net/http/serve_test.go:84:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.terrorWriter",
+			"pos": "/usr/local/go/src/net/http/serve_test.go:2812:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.testCloseConn",
+			"pos": "/usr/local/go/src/net/http/transport_test.go:62:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.testMockTCPConn",
+			"pos": "/usr/local/go/src/net/http/transport_test.go:5361:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/http_test.writerFuncConn",
+			"pos": "/usr/local/go/src/net/http/transport_test.go:3251:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/rpc.writeCrasher",
+			"pos": "/usr/local/go/src/net/rpc/server_test.go:617:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/rpc/jsonrpc.pipe",
+			"pos": "/usr/local/go/src/net/rpc/jsonrpc/all_test.go:312:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/smtp.dataCloser",
+			"pos": "/usr/local/go/src/net/smtp/smtp.go:274:6",
+			"kind": "struct"
+		},
+		{
+			"name": "net/smtp.faker",
+			"pos": "/usr/local/go/src/net/smtp/smtp_test.go:152:6",
+			"kind": "struct"
+		},
+		{
+			"name": "os/exec.closeOnce",
+			"pos": "/usr/local/go/src/os/exec/exec.go:589:6",
+			"kind": "struct"
+		},
+		{
+			"name": "strings_test.errWriter",
+			"pos": "/usr/local/go/src/strings/replace_test.go:333:6",
+			"kind": "struct"
+		},
+		{
+			"name": "testing.discard",
+			"pos": "/usr/local/go/src/testing/benchmark.go:783:6",
+			"kind": "struct"
+		},
+		{
+			"name": "testing.funcWriter",
+			"pos": "/usr/local/go/src/testing/sub_test.go:668:6",
+			"kind": "signature"
+		},
+		{
+			"name": "testing.indenter",
+			"pos": "/usr/local/go/src/testing/testing.go:513:6",
+			"kind": "struct"
+		},
+		{
+			"name": "text/tabwriter_test.panicWriter",
+			"pos": "/usr/local/go/src/text/tabwriter/tabwriter_test.go:620:6",
+			"kind": "struct"
+		},
+		{
+			"name": "text/template.ErrorWriter",
+			"pos": "/usr/local/go/src/text/template/exec_test.go:1268:6",
+			"kind": "basic"
+		}
+	]
+}
