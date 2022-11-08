@@ -79,6 +79,8 @@
 
 * [tasks/README.md](tasks/README.md)
 
+---
+
 * [asciitable](tasks/asciitable)
 * [btcprice](tasks/btcprice)
 * [datareader](tasks/datareader)
