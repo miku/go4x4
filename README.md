@@ -72,6 +72,28 @@
     * database drivers
     * sqlx helper
 
+
+----
+
+## Tasks
+
+* [tasks/README.md](tasks/README.md)
+
+* [asciitable](tasks/asciitable)
+* [btcprice](tasks/btcprice)
+* [datareader](tasks/datareader)
+* [generator](tasks/generator)
+* [genreverse](tasks/genreverse)
+* [helloworld](tasks/helloworld)
+* [infreader](tasks/infreader)
+* [linkchecker](tasks/linkchecker)
+* [randomimg](tasks/randomimg)
+* [rot13reader](tasks/rot13reader)
+* [switch](tasks/switch)
+* [timer](tasks/timer)
+* [vardecl](tasks/vardecl)
+* [wordfreq](tasks/wordfreq)
+
 ----
 
 Follow up:
