@@ -64,6 +64,30 @@ not in the standard library yet (but in
 [exp](https://pkg.go.dev/golang.org/x/exp#section-readme), *In short, code in
 this subrepository is not subject to the Go 1 compatibility promise.*)
 
+> What is [comparable](https://go.dev/ref/spec#Comparison_operators)?
+
+All non-interface types which are comparable.
+
+> In any comparison, the first operand must be assignable to the type of the
+> second operand, or vice versa. 
+
+Example:
+
+> * Boolean values are comparable. Two boolean values are equal if they are either both true or both false.
+> * Integer values are comparable and ordered, in the usual way. 
+
+[...]
+
+What is [assignable](https://go.dev/ref/spec#Assignability)?
+
+> A value x of type V is assignable to a variable of type T if ...
+
+* V and T are identical. 
+* V and T have identical underlying types ...
+
+
+
+
 ### Syntax
 
 ```

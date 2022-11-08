@@ -9,9 +9,9 @@
 
 Projects:
 
-* [Generator](../tasks/generator/main.go)
-* [Timer](../tasks/timer/main.go)
-* [Linkchecker](../tasks/linkchecker/main.go)
+* [Generator](../../tasks/generator/main.go)
+* [Timer](../../tasks/timer/main.go)
+* [Linkchecker](../../tasks/linkchecker/main.go)
 
 ## Extra
 
