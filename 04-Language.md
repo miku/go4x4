@@ -431,6 +431,9 @@ See:
 * [https://tour.golang.org/basics/6](https://tour.golang.org/basics/6)
 * [https://tour.golang.org/basics/7](https://tour.golang.org/basics/7)
 
+* `defer` allows to run code when the function exits
+* function can have named return values
+
 
 ## Methods and Interfaces
 
@@ -450,6 +453,8 @@ See:
 
 > But remember: Whatever you do, always check your errors! --
 > [https://blog.golang.org/errors-are-values](https://blog.golang.org/errors-are-values)
+
+More in: [Errors.md](08-Errors.md)
 
 
 ## Extra: Go Tour More Types
