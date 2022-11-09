@@ -57,6 +57,10 @@ Index of the three part series:
 
 ### How the scheduler works.
 
+* Processor (P)
+* OSThread (M)
+* Goroutines (G)
+
 ![Scheduler](scheduler.png)
 
 ## Links
