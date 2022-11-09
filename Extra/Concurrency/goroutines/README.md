@@ -61,7 +61,14 @@ Index of the three part series:
 * OSThread (M)
 * Goroutines (G)
 
+
 ![Scheduler](scheduler.png)
+
+
+> There are exactly GOMAXPROCS P’s (GOMAXPROCS is an environment variable and
+> runtime function that sets the amount of parallelism in the program). -- [How
+> does the golang scheduler
+> work?](https://www.quora.com/How-does-the-golang-scheduler-work/answer/Ian-Lance-Taylor)
 
 ## Links
 
