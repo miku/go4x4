@@ -2,7 +2,7 @@
 
 A few ways to check for identity:
 
-* `==` ()
+* `==` (comparable, [ref/spec](https://go.dev/ref/spec#Comparison_operators))
 * `bytes.Equal` (compares two byte slices)
 * `reflect.DeepEqual`  (recursive comparison)
 
