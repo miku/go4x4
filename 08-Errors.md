@@ -151,3 +151,8 @@ if errors.As(err, &e) {
 }
 ```
 
+## Critique
+
+* lack of stack traces
+
+![](static/errors-2022-124734344_49005129.png)
