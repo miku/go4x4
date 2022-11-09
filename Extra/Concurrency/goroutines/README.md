@@ -43,17 +43,21 @@ writing concurrent software:
 * Rate limit, set general limits
 * Use timeouts
 
+<!-- 
+
 Index of the three part series:
 
 * 1) [Scheduling In Go : Part I - OS Scheduler](https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html)
 * 2) [Scheduling In Go : Part II - Go Scheduler](https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html)
 * 3) [Scheduling In Go : Part III - Concurrency](https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html)
 
+-->
+
 ## Diagrams
 
 ### How the scheduler works.
 
-![Ardan Labs](scheduler.png?v=2)
+![Scheduler](scheduler.png)
 
 ## Links
 
