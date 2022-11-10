@@ -23,7 +23,6 @@ There is a "testing" package and a type `testing.T` that is passed into the test
 
 * test doubles for external dependencies
 
-
 # Benchmarking and Profiling
 
 ## Benchmarks

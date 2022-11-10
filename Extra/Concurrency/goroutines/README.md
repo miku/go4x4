@@ -70,6 +70,13 @@ Index of the three part series:
 > does the golang scheduler
 > work?](https://www.quora.com/How-does-the-golang-scheduler-work/answer/Ian-Lance-Taylor)
 
+Goroutines and context switch:
+
+> Essentially, Go has turned IO/Blocking work into CPU-bound work at the OS
+> level. Since all the context switching is happening at the application level,
+> we don’t lose the same ~12k instructions (on average) per context switch that
+> we were losing when using Threads.  -- from: [https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html](https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html)
+
 ## Links
 
 * [Scheduling In Go - Part I](https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html) - William Kennedy
