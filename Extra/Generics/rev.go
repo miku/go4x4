@@ -2,6 +2,7 @@ package main
 
 import "log"
 
+// Rev is not in-place.
 func Rev[T any](vs []T) []T {
 	rev := make([]T, len(vs))
 	for i := 0; i < len(vs); i++ {

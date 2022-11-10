@@ -8,6 +8,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"log"
 	"math/rand"
 	"runtime"
 	"sync"
@@ -24,13 +25,13 @@ func main() {
 	// fanOut()
 
 	// waitForTask()
-	// pooling()
+	pooling()
 
 	// Advanced patterns
 	// fanOutSem()
 	// boundedWorkPooling()
 	// drop()
-	cancellation()
+	// cancellation()
 }
 
 // waitForResult: You are a manager and you hire a new employee. Your new
@@ -39,7 +40,7 @@ func main() {
 // of time you wait on the employee is unknown because you need a
 // guarantee that the result sent by the employee is received by you.
 func waitForResult() {
-	ch := make(chan string)
+	ch := make(chan string) // unbuffered channel - make(chan string, 10) // capacity
 
 	go func() {
 		time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
@@ -50,7 +51,7 @@ func waitForResult() {
 	p := <-ch
 	fmt.Println("manager : recv'd signal :", p)
 
-	time.Sleep(time.Second)
+	// time.Sleep(time.Second)
 	fmt.Println("-------------------------------------------------------------")
 }
 
@@ -63,7 +64,7 @@ func waitForResult() {
 // received their result.
 func fanOut() {
 	emps := 2000
-	ch := make(chan string, emps)
+	ch := make(chan string, 1000) // buffered channel
 
 	for e := 0; e < emps; e++ {
 		go func(emp int) {
@@ -72,13 +73,16 @@ func fanOut() {
 			fmt.Println("employee : sent signal :", emp)
 		}(e)
 	}
+	// log.Println(len(ch))
 
 	for emps > 0 {
 		p := <-ch
 		emps--
 		fmt.Println(p)
 		fmt.Println("manager : recv'd signal :", emps)
+		log.Println(len(ch))
 	}
+	// log.Println(len(ch), cap(ch))
 
 	time.Sleep(time.Second)
 	fmt.Println("-------------------------------------------------------------")
@@ -100,7 +104,7 @@ func waitForTask() {
 	time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
 	ch <- "paper"
 	fmt.Println("manager : sent signal")
-	// time.Sleep(time.Second)
+	time.Sleep(time.Second)
 	// fmt.Println("-------------------------------------------------------------")
 }
 
@@ -111,29 +115,35 @@ func waitForTask() {
 // take your work is unknown because you need a guarantee that the work your
 // sending is received by an employee.
 func pooling() {
-	ch := make(chan string, 1000)
+	ch := make(chan string, 1000) // buffer = 1000
+	var wg sync.WaitGroup
 
-	g := runtime.NumCPU()
+	g := runtime.NumCPU() // 8
 	for e := 0; e < g; e++ {
+		wg.Add(1)
 		go func(emp int) {
+			defer wg.Done()
 			for p := range ch {
 				fmt.Printf("employee %d : recv'd signal : %s\n", emp, p)
+				s := 0
+				for i := 0; i < 10_000_000; i++ {
+					s += 1
+				}
 			}
 			fmt.Printf("employee %d : recv'd shutdown signal\n", emp)
 		}(e)
 	}
-
-	const work = 100
+	const work = 1000
 	for w := 0; w < work; w++ {
 		ch <- "paper"
 		fmt.Println("manager : sent signal :", w)
 	}
-
 	close(ch)
 	fmt.Println("manager : sent shutdown signal")
+	wg.Wait()
 
-	time.Sleep(time.Second)
-	fmt.Println("-------------------------------------------------------------")
+	// time.Sleep(5 * time.Second)
+	// fmt.Println("-------------------------------------------------------------")
 }
 
 // fanOutSem: You are a manager and you hire one new employee for the exact amount

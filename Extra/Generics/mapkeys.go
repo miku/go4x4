@@ -2,6 +2,10 @@ package main
 
 import "log"
 
+func StringMapKeys(m map[string]string) []string {
+	return nil
+}
+
 // MapKeys returns a list of keys for any map type.
 func MapKeys[K comparable, V any](m map[K]V) []K {
 	var ks []K
