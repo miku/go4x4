@@ -16,12 +16,47 @@ There is a "testing" package and a type `testing.T` that is passed into the test
 
 ## Running tests
 
+* local directory mode
+* package mode
 
+Without any arguments, go test look in the default directory.
 
+```
+$ go test 
+```
 
-## Mocking
+You can supply the files to be used for tests.
 
-* test doubles for external dependencies
+```
+$ go test adder.go adder_test.go
+```
+
+Package name:
+
+```
+$ go test github.com/miku/adder
+```
+
+Or package wildcard, e.g. run all tests in the current package and subpackages.
+
+```
+$ go test ./...
+```
+
+You can see what is included:
+
+```
+$ go list ./...
+github.com/miku/adder
+github.com/miku/adder/cmd/addercli
+github.com/miku/adder/fmtutil
+```
+
+Run individual test:
+
+```
+$ go test -run TestAdd -v
+```
 
 # Benchmarking and Profiling
 

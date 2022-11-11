@@ -89,3 +89,31 @@ type Scanner interface {
 }
 ```
 
+## sqlx
+
+* third-party, slim layer above standard sql abstraction
+
+Notably, it provides `Get` and `Select` to combine query execution and struct
+parsing:
+[https://jmoiron.github.io/sqlx/#getAndSelect](https://jmoiron.github.io/sqlx/#getAndSelect)
+
+These time-savers you either `Rows` or `StructScan` under the hood.
+
+> The primary extension on sqlx.Rows is StructScan(), which automatically scans
+> results into struct fields. 
+
+```go
+    type Place struct {
+        Country       string
+        City          sql.NullString
+        TelephoneCode int `db:"telcode"`
+    }
+     
+    rows, err := db.Queryx("SELECT * FROM place")
+    for rows.Next() {
+        var p Place
+        err = rows.StructScan(&p)
+    }
+```
+
+Example in todosvc: [https://github.com/miku/todosvc/blob/d1b4a017839ff39f9e140fa76b8094a8c61d4c31/server.go#L45](https://github.com/miku/todosvc/blob/d1b4a017839ff39f9e140fa76b8094a8c61d4c31/server.go#L45).
