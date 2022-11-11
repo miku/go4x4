@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS entries (id INT, name TEXT);
