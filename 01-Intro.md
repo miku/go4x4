@@ -71,6 +71,9 @@ All Go code is organized in packages.
 > A package in Go is simply a directory/folder with one or more .go files inside
 > of it. -- [https://rakyll.org/style-packages/](https://rakyll.org/style-packages/)
 
+The spec says, that implementations may require for all files of a package to live in the same directory:
+
+> A set of files sharing the same PackageName form the implementation of a package. An implementation may require that all source files for a package inhabit the same directory. 
 
 ## Import resolution
 
@@ -109,6 +112,15 @@ To install executables on your system, run `go install` instead:
 
 ```
 $ go install golang.org/x/tools/cmd/goimports@latest
+```
+
+## Vanity URLs
+
+Example: [https://golangleipzig.space/clt23/](https://golangleipzig.space/clt23/)
+
+```
+$ go install golangleipzig.space/clt23@latest
+$ clt23
 ```
 
 ## Why Go?

@@ -117,6 +117,23 @@ tir@trieste:~/code/miku/zek [git:master] $ go list -f '{{ .TestGoFiles }}'
 [node_test.go stack_test.go structwriter_test.go]
 ```
 
+## JSON output
+
+
+```shell
+$ go list -json ./backend/vault/ | jq -C . | less -r
+{
+  "Dir": "/home/tir/code/git.archive.org/martin/rclone/backend/vault",
+  "ImportPath": "github.com/rclone/rclone/backend/vault",
+  "Name": "vault",
+  "Doc": "Package vault adds support for the Vault Digital Preservation System at Internet Archive.",
+  "Root": "/home/tir/code/git.archive.org/martin/rclone",
+  "Module": {
+    "Path": "github.com/rclone/rclone",
+    "Main": true,
+    "Dir": "/home/tir/code/git.archive.org/martin/rclone",
+```
+
 ## List dependencies
 
 Listing dependencies and versions of a binary.
