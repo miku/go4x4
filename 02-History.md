@@ -6,7 +6,7 @@
 
 Release history:
 [https://golang.org/doc/devel/release](https://golang.org/doc/devel/release),
-latest as of 05/2022: [go1.18.1](https://go.dev/doc/devel/release#go1.18).
+latest as of 04/2023: [go1.20.3](https://go.dev/doc/devel/release#go1.20).
 
 
 ## Repo History
@@ -15,34 +15,34 @@ latest as of 05/2022: [go1.18.1](https://go.dev/doc/devel/release#go1.18).
 $ git summary | head -30
 
  project  : go
- repo age : 50 years
- active   : 4802 days
- commits  : 52130
- files    : 11457
+ repo age : 51 years
+ active   : 5136 days
+ commits  : 56101
+ files    : 12216
  authors  : 
-  6936  Russ Cox                                                    13.3%
-  3840  Robert Griesemer                                            7.4%
-  2981  Rob Pike                                                    5.7%
-  2359  Brad Fitzpatrick                                            4.5%
-  2274  Ian Lance Taylor                                            4.4%
-  1531  Austin Clements                                             2.9%
-  1495  Josh Bleecher Snyder                                        2.9%
-  1356  Matthew Dempsky                                             2.6%
-  1306  Keith Randall                                               2.5%
-  1192  Andrew Gerrand                                              2.3%
-  1024  Cherry Zhang                                                2.0%
-   923  Bryan C. Mills                                              1.8%
-   922  Shenghou Ma                                                 1.8%
-   772  Alex Brainman                                               1.5%
-   752  Mikio Hara                                                  1.4%
-   690  Dmitriy Vyukov                                              1.3%
-   523  Adam Langley                                                1.0%
-   508  Ken Thompson                                                1.0%
-   476  Dave Cheney                                                 0.9%
-   464  Nigel Tao                                                   0.9%
-   418  Joel Sing                                                   0.8%
-   416  Tobias Klauser                                              0.8%
-   392  David Crawshaw                                              0.8%
+  7184  Russ Cox                                                    12.8%
+  4104  Robert Griesemer                                            7.3%
+  2987  Rob Pike                                                    5.3%
+  2451  Ian Lance Taylor                                            4.4%
+  2369  Brad Fitzpatrick                                            4.2%
+  1625  Austin Clements                                             2.9%
+  1551  Matthew Dempsky                                             2.8%
+  1496  Josh Bleecher Snyder                                        2.7%
+  1435  Keith Randall                                               2.6%
+  1192  Andrew Gerrand                                              2.1%
+  1154  Bryan C. Mills                                              2.1%
+  1026  Cherry Zhang                                                1.8%
+   922  Shenghou Ma                                                 1.6%
+   777  Alex Brainman                                               1.4%
+   752  Mikio Hara                                                  1.3%
+   690  Dmitriy Vyukov                                              1.2%
+   530  Tobias Klauser                                              0.9%
+   524  Adam Langley                                                0.9%
+   520  Cuong Manh Le                                               0.9%
+   508  Ken Thompson                                                0.9%
+   488  Than McIntosh                                               0.9%
+   476  Dave Cheney                                                 0.8%
+   467  Nigel Tao                                                   0.8%
 
 ```
 
@@ -118,7 +118,96 @@ Further milestones:
 * Go 1.16 added file embedding 
 * Go 1.18 added generic type support, automated test via fuzzing
 
-The current release is [Go 1.18](https://blog.golang.org/go1.18) from 2022-03-15.
+The current release is [Go 1.20](https://go.dev/blog/go1.20) from 2023-02-01.
+
+A quick repo analysis:
+
+* [Slides.md#go-repo-analysis](https://github.com/golang-leipzig/state-of-go-in-2022/blob/main/Slides.md#go-repo-analysis)
+
+Repository numbers:
+
+```
+$ tokei -o json src | jq .Go.code
+1681374
+
+$ for d in $(find . -maxdepth 1 -type d | sort); do echo -n "$(basename $d) "; tokei -o json $d | jq -rc .Go.code; done | column -t | sort -k2,2 -nr
+.          1681374
+cmd        836753
+syscall    135182
+runtime    100298
+net        92448
+vendor     73402
+crypto     69691
+go         51478
+internal   44097
+encoding   34873
+math       28432
+os         19693
+debug      16493
+reflect    16186
+image      13431
+html       11112
+unicode    10907
+archive    10474
+text       9680
+time       9224
+database   8863
+compress   8109
+testing    7635
+regexp     7304
+strconv    7201
+sync       6605
+fmt        5699
+log        5320
+strings    5215
+bytes      5059
+mime       4784
+path       4314
+io         3357
+bufio      3151
+hash       2938
+sort       2511
+index      2196
+flag       1584
+context    1581
+container  1126
+expvar     778
+slices     737
+errors     560
+embed      430
+maps       208
+plugin     127
+arena      64
+builtin    52
+unsafe     12
+
+$ cd cmd
+$ for d in $(find . -maxdepth 1 -type d | sort); do echo -n "$(basename $d) "; tokei -o json $d | jq -rc .Go.code; done | column -t | sort -k2,2 -nr
+.          836753
+compile    393499
+vendor     249327
+internal   71665
+go         55063
+link       31956
+asm        6219
+cgo        5083
+dist       4244
+trace      4103
+fix        2829
+doc        2497
+cover      2368
+covdata    1897
+api        1488
+vet        1074
+gofmt      1065
+pack       672
+pprof      500
+nm         467
+objdump    416
+addr2line  186
+test2json  72
+buildid    63
+```
 
 ## Origins and influences
 

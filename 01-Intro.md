@@ -149,7 +149,15 @@ Go is garbage-collected, yet fast - or fast enough for many use cases.
 Anecdotal evidence: A simple, unoptimized reservoir sampling tool in Go is about
 twice as slow than a classic (most likely optimized) C tool.
 
--- [miku/rsampling](https://github.com/miku/rsampling),
+-- [miku/rsampling](https://github.com/miku/rsampling)
+
+### Energy efficient
+
+* [Ranking programming languages by energy efficiency](https://haslab.github.io/SAFER/scp21.pdf) (2021)
+
+> [Where Go shines](https://github.com/miku/goenergy#where-go-shines)
+
+> Category: **Lowest peak memory usage**. The top 5 languages, also presented in Table 4, with the lowest value were: Pascal (66 Mb), Go (69 Mb), C (77 Mb), Fortran (82 Mb), and C++ (88 Mb);
 
 ### Not a research language
 

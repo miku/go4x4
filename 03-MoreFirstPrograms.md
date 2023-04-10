@@ -28,7 +28,7 @@ Not required for one-off tools, e.g.:
 * [crfs](https://github.com/google/crfs)
 * ...
 
-For a first tool, this minimalistic approach is quite nice.
+For prototypical implementations, this minimalistic approach can be useful.
 
 ## Encoding
 
