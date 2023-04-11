@@ -41,13 +41,13 @@ A few more:
 
 There are many things Go Generics do not support: No metaprogramming (macros);
 no operator methods (e.g. no syntax like `c[i]` for custom types); no
-[covariance or contravariance](https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)) of function parameters; ...
+[covariance or contravariance](https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)) of function parameters.
 
 
 Notes: e.g. in Go we cannot express `List[string]` is not a subtype of
 `List[any]`.
 
-Also: 
+In summary:
 
 * no specialization (no type hierarchies), no co/contra-variance
 * no metaprogramming 
@@ -106,7 +106,7 @@ func G[T Constraint](p T) { }
 
 There is a container package in the standard library, not widely used:
 
-* [https://pkg.go.dev/container/list@go1.18.3](https://pkg.go.dev/container/list@go1.18.3)
+* [https://pkg.go.dev/container/list@go1.20.3](https://pkg.go.dev/container/list@go1.20.3)
 
 > the Go standard library package container is mostly unused. Everything in the
 > container package deals with interface{}/any values, which is Go for
